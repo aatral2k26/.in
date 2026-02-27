@@ -10,7 +10,7 @@ const CFG = {
   apiUrl:
     "https://script.google.com/macros/s/AKfycbxBDs9uToZrg1yYElZ8csHTMM4zamvrXmqCtXVyDoN1QUpedy3VCMVZE3lJiheKUz9o/exec",
   // ↓ Cloudinary settings from your dashboard
-  cloudinaryCloudName: "dt8rypckn",
+  cloudinaryCloudName: "dcn3rn9dv",
   cloudinaryUploadPreset: "aatral",
 };
 
