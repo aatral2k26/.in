@@ -1,0 +1,104 @@
+/* ================================================================
+   AATRAL 2K26 — SHARED STYLES
+================================================================ */
+:root{
+  --bg:#060810;
+  --teal:#0a2a2f;
+  --teal2:#0d3540;
+  --crimson:#3a0a0a;
+  --gold:#D4AF37;
+  --goldhi:#F4C430;
+  --golddim:rgba(212,175,55,.13);
+  --goldbright:rgba(212,175,55,.35);
+  --text:#EDE0C4;
+  --muted:#8A7F6A;
+  --dark2:#0e0e14;
+  --dark3:#12121a;
+  --red:#c0392b;
+  --tealhi:#1aB8c8;
+  --r:12px;
+  --ease:.35s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Raleway',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+
+/* ─── STAR BG ─── */
+#starsBg{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 40%, rgba(10,42,47,.55) 0, transparent 65%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(58,10,10,.4) 0, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 10%, rgba(10,42,47,.3) 0, transparent 60%)}
+.sp{position:absolute;border-radius:50%;background:#fff;animation:twinkle var(--d,3s) ease-in-out var(--dl,0s) infinite alternate}
+@keyframes twinkle{from{opacity:var(--mn,.08);transform:scale(1)}to{opacity:var(--mx,.75);transform:scale(1.5)}}
+
+.rayburst{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:200vmax;height:200vmax;z-index:0;pointer-events:none;opacity:.04;
+  background:conic-gradient(from 0deg,transparent 0deg 10deg,rgba(0,200,200,.6) 10deg 12deg,transparent 12deg 40deg,rgba(212,175,55,.5) 40deg 42deg,transparent 42deg 70deg,rgba(0,200,200,.5) 70deg 72deg,transparent 72deg 100deg,rgba(212,175,55,.4) 100deg 102deg,transparent 102deg 130deg,rgba(0,200,200,.5) 130deg 132deg,transparent 132deg 160deg,rgba(212,175,55,.4) 160deg 162deg,transparent 162deg 200deg,rgba(0,200,200,.5) 200deg 202deg,transparent 202deg 240deg,rgba(212,175,55,.4) 240deg 242deg,transparent 242deg 280deg,rgba(0,200,200,.5) 280deg 282deg,transparent 282deg 310deg,rgba(212,175,55,.4) 310deg 312deg,transparent 312deg 360deg);
+  animation:rotray 60s linear infinite}
+@keyframes rotray{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2rem;transition:background var(--ease)}
+nav.scrolled{background:rgba(6,8,16,.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--golddim);box-shadow:0 4px 30px rgba(0,0,0,.5)}
+.nav-in{max-width:1240px;margin:auto;display:flex;align-items:center;gap:1.8rem;height:66px}
+.nlogo{font-family:'Cinzel Decorative',serif;font-size:1.2rem;margin-right:auto;cursor:pointer;line-height:1;text-decoration:none}
+.nlogo .na{color:var(--gold);text-shadow:0 0 20px rgba(212,175,55,.5)}
+.nlogo .ny{color:var(--muted);font-size:.75rem;display:block;letter-spacing:3px}
+.nlinks{display:flex;list-style:none;gap:1.8rem}
+.nlinks a{color:var(--muted);text-decoration:none;font-size:.86rem;letter-spacing:.6px;font-weight:500;transition:color var(--ease)}
+.nlinks a:hover,.nlinks a.active{color:var(--gold)}
+.nbtn{background:linear-gradient(135deg,var(--gold),var(--goldhi));color:var(--bg);border:none;padding:8px 22px;border-radius:25px;font-family:'Cinzel',serif;font-weight:700;font-size:.8rem;cursor:pointer;transition:all var(--ease);letter-spacing:.5px;box-shadow:0 3px 15px rgba(212,175,55,.3);text-decoration:none;display:inline-block}
+.nbtn:hover{transform:translateY(-1px);box-shadow:0 6px 25px rgba(212,175,55,.5)}
+.hbg{display:none;background:none;border:none;color:var(--gold);font-size:1.5rem;cursor:pointer}
+
+/* ─── BUTTONS ─── */
+.btnp{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--gold),var(--goldhi));color:var(--bg);border:none;padding:14px 38px;border-radius:50px;font-family:'Cinzel',serif;font-weight:700;font-size:.88rem;letter-spacing:1px;cursor:pointer;transition:all var(--ease);box-shadow:0 4px 25px rgba(212,175,55,.35)}
+.btnp:hover{transform:translateY(-2px);box-shadow:0 8px 40px rgba(212,175,55,.55)}
+.btnp .shine{position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .6s ease}
+.btnp:hover .shine{left:150%}
+.btnp.lg{padding:16px 48px;font-size:.95rem}
+.btns{background:transparent;color:var(--tealhi);border:2px solid var(--tealhi);padding:14px 38px;border-radius:50px;font-family:'Cinzel',serif;font-weight:600;font-size:.88rem;letter-spacing:1px;cursor:pointer;transition:all var(--ease)}
+.btns:hover{background:rgba(26,184,200,.1);transform:translateY(-2px)}
+
+/* ─── SECTIONS ─── */
+section{position:relative;z-index:2;padding:90px 2rem}
+.shdr{text-align:center;margin-bottom:50px}
+.stag{font-size:.7rem;color:var(--tealhi);letter-spacing:3px;text-transform:uppercase;margin-bottom:.5rem}
+.stitle{font-family:'Cinzel',serif;font-size:clamp(1.8rem,4.5vw,3rem);color:var(--text);margin-bottom:1rem}
+.gold{color:var(--gold)}
+.gline{width:80px;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto}
+.gline.teal{background:linear-gradient(90deg,transparent,var(--tealhi),transparent)}
+
+/* ─── REVEAL ─── */
+.rv{opacity:0;transform:translateY(35px);transition:opacity .7s ease,transform .7s ease}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* ─── FOOTER ─── */
+footer{position:relative;z-index:2;background:rgba(6,8,16,.98);border-top:1px solid var(--golddim);padding:40px 2rem;text-align:center}
+.flogo{font-family:'Cinzel Decorative',serif;font-size:1.5rem;margin-bottom:.5rem}
+.flogo .fa{color:var(--gold);text-shadow:0 0 20px rgba(212,175,55,.4)}
+.fsocial{color:var(--tealhi);font-size:.8rem;letter-spacing:2px;margin-bottom:.4rem}
+.fsub{color:var(--muted);font-size:.78rem;margin-bottom:.3rem}
+.fcopy{color:rgba(138,127,106,.4);font-size:.72rem}
+
+/* ─── TOAST ─── */
+.toast{position:fixed;bottom:26px;right:26px;background:linear-gradient(135deg,#0e1020,#141420);border:1px solid var(--golddim);border-radius:10px;padding:12px 20px;color:var(--text);font-size:.86rem;z-index:9999;animation:toastIn .3s ease;box-shadow:0 10px 40px rgba(0,0,0,.6);max-width:300px}
+.toast.err{border-color:#e74c3c}
+.toast.ok{border-color:var(--gold)}
+@keyframes toastIn{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.25);border-top-color:var(--bg);border-radius:50%;animation:sp .7s linear infinite;vertical-align:middle;margin-right:5px}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* ─── PAGE HEADER (for inner pages) ─── */
+.page-hero{padding:130px 2rem 60px;text-align:center;position:relative;z-index:2}
+.page-hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(2rem,6vw,4rem);color:var(--gold);text-shadow:0 0 40px rgba(212,175,55,.4);margin-bottom:.5rem}
+.page-hero p{color:var(--muted);font-size:1rem;letter-spacing:1px}
+.page-hero .back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--tealhi);text-decoration:none;font-size:.82rem;letter-spacing:1px;margin-bottom:1.5rem;transition:color var(--ease)}
+.page-hero .back-link:hover{color:var(--gold)}
+
+/* ─── MOBILE ─── */
+@media(max-width:768px){
+  .nlinks,.nbtn{display:none}
+  .hbg{display:block}
+  .nlinks.mopen{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(6,8,16,.97);padding:2rem;gap:1.5rem;border-bottom:1px solid var(--golddim);z-index:999}
+}
