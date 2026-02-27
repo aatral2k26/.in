@@ -19,7 +19,7 @@ const EVTS = {
     {
       id:'paper-nova', name:'Paper NOVA', icon:'📄',
       tag:'Present your research. Win with innovation.',
-      size:'1–4 Members', prize:'Cash Prize',
+      size:'1–3 Members', prize:'Cash Prize',
       format:{team:'1 to 3 members',rounds:'Round 1: Abstract (250 words PDF) → Round 2: Live Presentation',duration:'7 min presentation + 3 min Q&A',mode:'On-site with pre-screening'},
       desc:'Paper NOVA is a prestigious paper presentation contest open to all undergraduate engineering students. Teams first submit a 250-word abstract for screening. Shortlisted teams present their research live. On-spot registered students can also participate directly in Round 2.',
       rules:['Eligibility: All undergraduate engineering students.','Abstract: Max 250 words, PDF format, include title and team info.','Shortlisted teams notified within 48 hours via email.','Presentation: 7 minutes slides (warning at 6 min) + 3 min Q&A.','Use Microsoft PowerPoint only.','On-spot participants can join directly in Round 2.','Judges\' decisions are final and binding.'],
@@ -28,7 +28,7 @@ const EVTS = {
     {
       id:'electra-xpo', name:'ElectraXpo', icon:'⚡',
       tag:'Showcase working models. Pitch your innovation.',
-      size:'1–4 Members', prize:'Cash Prize',
+      size:'1–3 Members', prize:'Cash Prize',
       format:{team:'1 to 3 members',entry:'Direct entry — all registered teams display on event day',setup:'Arrive 60 mins before event for setup',duration:'3–5 min elevator pitch to judges'},
       desc:'ElectraXpo is a project expo where teams showcase working hardware/software prototypes at dedicated stalls. Judges circulate and evaluate each project. At least one member must be present at the stall throughout. Software projects must include a live demo (videos only as backup).',
       rules:['Eligibility: All undergraduate engineering students, any discipline.','Teams must bring their own hardware/prototypes/software.','Basic power sockets and tables provided. Special needs must be requested 48 hours in advance.','Display space provided with A1/A2 poster recommended.','Software projects: live demo mandatory, video only as backup.','At least one team member must be at the stall at all times.','Setup Time: Arrive 60 minutes before event start.'],
