@@ -4,7 +4,7 @@
 
 const CFG = {
   eventDate: new Date("2026-03-17T09:00:00"),
-  fee: 250,
+  fee: 150,
   upi: "earjun018@okicici",
   // ↓ Replace with your deployed Google Apps Script URL
   apiUrl:
