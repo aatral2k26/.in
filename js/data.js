@@ -8,7 +8,7 @@ const CFG = {
   upi: "earjun018@okicici",
   // ↓ Replace with your deployed Google Apps Script URL
   apiUrl:
-    "https://script.google.com/macros/s/AKfycbxBDs9uToZrg1yYElZ8csHTMM4zamvrXmqCtXVyDoN1QUpedy3VCMVZE3lJiheKUz9o/exec",
+    "https://script.google.com/macros/s/AKfycbxQwTBus2oun11ldX5MUFapZoO238VPnLCNDP4aYymfg9wsIUPgeC7z62vgCy6K2QEFwQ/exec",
   // ↓ Cloudinary settings from your dashboard
   cloudinaryCloudName: "dcn3rn9dv",
   cloudinaryUploadPreset: "aatral",
